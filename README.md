@@ -12,15 +12,24 @@ Projeto FRONT-END desenvolvido com HTML5, CSS3, JavaScript, TypeScript e React, 
 
 ## Autores
 
-- [Caique Gomes](https://www.linkedin.com/in/cttcaiquegomes/)
+- [Caique Gomes](https://www.linkedin.com/in/cttcaiquegomes/) https://github.com/Caiqe
 
-- [Daniel Lima](https://www.linkedin.com/in/danieldossantoslima)
+- [Daniel Lima](https://www.linkedin.com/in/danieldossantoslima) https://github.com/DanielDosSantosLima
 
-- [Daniella Santana](https://www.linkedin.com/in/adaniellasantana/)
+- [Daniella Santana](https://www.linkedin.com/in/adaniellasantana/) https://github.com/adanisantana
 
-- [Rodrigo Oliveira](https://www.linkedin.com/in/rodrigo-oliveira-de-santana-23a330262/)
+- [Rodrigo Oliveira](https://www.linkedin.com/in/rodrigo-oliveira-de-santana-23a330262/) https://github.com/RPX31
   
-- [Sabrina Lima](https://www.linkedin.com/in/sabrina-santoslima/)
+- [Sabrina Lima](https://www.linkedin.com/in/sabrina-santoslima/) https://github.com/sabrinasanmi
+
+<table>
+  <tr>
+	<td align="center"><a href="https://www.linkedin.com/in/cttcaiquegomes/"><img style="border-radius: 50%;" src="https://ik.imagekit.io/ix39wusls/Fotos%20PI/caique%20rec?updatedAt=1738073986570" width="100px;" alt="Caique"/><br /><sub><b>Caique Gomes</b></sub></a><br /><a href="https://github.com/Caiqe" title="Caique Gomes"></a></td> 
+	<td align="center"><a href="https://www.linkedin.com/in/danieldossantoslima"><img style="border-radius: 50%;" src="https://ik.imagekit.io/ix39wusls/Fotos%20PI/daniel%20rec?updatedAt=1738073986046" width="100px;" alt="Daniel"/><br /><sub><b>Daniel Lima</b></sub></a><br /><a href="https://github.com/DanielDosSantosLima" title="Daniel Lima"></a></td> 
+	  
+</tr>
+</table>
+
 
 ## Tecnologias Utilizadas
 
