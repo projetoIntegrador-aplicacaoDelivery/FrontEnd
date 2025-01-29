@@ -29,6 +29,8 @@ Projeto FRONT-END desenvolvido com HTML5, CSS3, JavaScript, TypeScript e React, 
 ● Jira (https://projetos-gen.atlassian.net/jira/core/projects/T2F/board?atlOrigin=eyJpIjoiY2Q5ZTE0MTY3ZmZjNDQ2ZThkY2Q1MjVjMDIwNjFiOTgiLCJwIjoiaiJ9)
 ● Google Drive
 
+## Instituição de Ensino
+
 <img src="https://brazil.generation.org/wp-content/uploads/2024/10/Generation_BRAZIL_logo_NEW-BLUE.png" alt="Logo" width="200">
 
 
