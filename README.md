@@ -1,3 +1,37 @@
+
+# Fresh - Produtos Orgânicos (Aplicativo de Delivery)
+[Escopo](link aqui)  |
+<br><br>
+Projeto FRONT-END desenvolvido com HTML5, CSS3, JavaScript, TypeScript e React, que permite o gerenciamento de entregas de alimentos saudáveis.
+
+## Autores
+
+- [Caique Gomes](https://www.linkedin.com/in/cttcaiquegomes/)
+
+- [Daniel Lima](https://www.linkedin.com/in/danieldossantoslima)
+
+- [Daniella Santana](https://www.linkedin.com/in/adaniellasantana/)
+
+- [Rodrigo Oliveira](https://www.linkedin.com/in/rodrigo-oliveira-de-santana-23a330262/)
+  
+- [Sabrina Lima](https://www.linkedin.com/in/sabrina-santoslima/)
+
+## Tecnologias Utilizadas
+
+● HTML5
+● CSS3
+● JavaScript
+● TypeSript
+● React
+
+## Ferramenta de Gestão de Projetos
+
+● Jira (https://projetos-gen.atlassian.net/jira/core/projects/T2F/board?atlOrigin=eyJpIjoiY2Q5ZTE0MTY3ZmZjNDQ2ZThkY2Q1MjVjMDIwNjFiOTgiLCJwIjoiaiJ9)
+● Google Drive
+
+<img src="https://brazil.generation.org/wp-content/uploads/2024/10/Generation_BRAZIL_logo_NEW-BLUE.png" alt="Logo" width="200">
+
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
