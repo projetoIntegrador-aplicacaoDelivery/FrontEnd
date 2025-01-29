@@ -1,4 +1,4 @@
-import { FaFacebook, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { GithubLogo, FacebookLogo, InstagramLogo, LinkedinLogo } from '@phosphor-icons/react'
 
 export default function Footer() {
   return (
@@ -21,16 +21,16 @@ export default function Footer() {
         {/* Redes Sociais */}
         <div className="flex space-x-4">
           <a href="https://www.facebook.com/generationbrasil" className="text-white hover:text-lime-green">
-            <FaFacebook size={24} />
+            <FacebookLogo size={24} />
           </a>
           <a href="https://github.com/projetoIntegrador-aplicacaoDelivery/FrontEnd" className="text-white hover:text-lime-green">
-            <FaGithub size={24} />
+            <GithubLogo size={24} />
           </a>
           <a href="https://www.instagram.com/generationbrasil" className="text-white hover:text-lime-green">
-            <FaInstagram size={24} />
+            <InstagramLogo size={24} />
           </a>
           <a href="https://www.linkedin.com/school/generationbrasil" className="text-white hover:text-lime-green">
-            <FaLinkedin size={24} />
+            <LinkedinLogo size={24} />
           </a>
         </div>
       </div>
