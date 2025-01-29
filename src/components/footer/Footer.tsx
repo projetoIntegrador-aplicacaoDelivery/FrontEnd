@@ -2,7 +2,7 @@ import { FaFacebook, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="bg-green-400 text-white py-4">
+    <footer className="bg-charcoal text-white py-4">
       <div className="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
         {/* Nome da Empresa */}
         <div className="text-lg font-semibold mb-4 md:mb-0">
@@ -10,10 +10,13 @@ export default function Footer() {
         </div>
 
         {/* Links */}
-        <div className="flex space-x-6 mb-4 md:mb-0">
-          <a href="#" className="hover:underline">Termos de Uso</a>
-          <a href="#" className="hover:underline">Política de Privacidade</a>
+        <div className="text-white hover:text-lime-green flex space-x-6 mb-4 md:mb-0">
+          <a href="#" >Termos de Uso</a>
         </div>
+        <div className="text-white hover:text-lime-green flex space-x-6 mb-4 md:mb-0">
+          <a href="#" >Política de Privacidade</a>
+        </div>
+        
 
         {/* Redes Sociais */}
         <div className="flex space-x-4">
