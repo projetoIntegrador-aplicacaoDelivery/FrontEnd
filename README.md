@@ -26,7 +26,7 @@ Projeto FRONT-END desenvolvido com HTML5, CSS3, JavaScript, TypeScript e React, 
 
 ## Ferramenta de Gestão de Projetos
 
-● Jira (https://projetos-gen.atlassian.net/jira/core/projects/T2F/board?atlOrigin=eyJpIjoiY2Q5ZTE0MTY3ZmZjNDQ2ZThkY2Q1MjVjMDIwNjFiOTgiLCJwIjoiaiJ9)
+● Jira - https://projetos-gen.atlassian.net/jira/core/projects/T2F/board?atlOrigin=eyJpIjoiY2Q5ZTE0MTY3ZmZjNDQ2ZThkY2Q1MjVjMDIwNjFiOTgiLCJwIjoiaiJ9
 
 ● Google Drive
 
