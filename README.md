@@ -1,8 +1,14 @@
 
 # Fresh - Produtos Orgânicos (Aplicativo de Delivery)
-[Escopo](link aqui)  |
-<br><br>
+[![Static Badge](https://img.shields.io/badge/-Escopo%20do%20projeto-limegreen)](https://github.com/projetoIntegrador-aplicacaoDelivery/FrontEnd/blob/footer/documents/Escopo%20do%20Projeto%20-%20TASK2%20(Front-End).docx)
+
 Projeto FRONT-END desenvolvido com HTML5, CSS3, JavaScript, TypeScript e React, que permite o gerenciamento de entregas de alimentos saudáveis.
+
+## Logotipo e Paleta de Cores
+<div style="display: inline_block">
+    <img align="center" height=250px width=250px src="https://github.com/projetoIntegrador-aplicacaoDelivery/FrontEnd/blob/footer/documents/Logotipo.png"/>
+    <img align="center" height=250px width=400px src="https://github.com/projetoIntegrador-aplicacaoDelivery/FrontEnd/blob/footer/documents/paletadecores.png"/>
+</div>
 
 ## Autores
 
@@ -18,11 +24,13 @@ Projeto FRONT-END desenvolvido com HTML5, CSS3, JavaScript, TypeScript e React, 
 
 ## Tecnologias Utilizadas
 
-● HTML5
-● CSS3
-● JavaScript
-● TypeSript
-● React
+<div style="display: inline_block">
+    <img align="center" alt="HTML5" src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
+    <img align="center" alt="CSS" src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
+    <img align="center" alt="CSS" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
+    <img align="center" alt="Typescript" src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white"/>
+    <img align="center" alt="React" src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"/>
+</div>
 
 ## Ferramenta de Gestão de Projetos
 
