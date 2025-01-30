@@ -21,8 +21,8 @@ function Categorias() {
     }, []);
 
     return (
-        <div className="container py-8">
-            <h2 className="text-3xl font-bold mb-4">Categorias</h2>
+        <div className="flex flex-col justify-around items-center mb-8">
+            <h2 className="text-5xl   px-8 py-16  text-green-400 font-bold">Categorias</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                 {categorias.map((categoria) => (
                     <CardCategoria key={categoria.id}

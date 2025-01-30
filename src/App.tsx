@@ -11,6 +11,7 @@ import RecomendaProduto from './components/produtos/recomendaproduto/RecomendaPr
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import DeletarCategoria from './pages/categorias/DeletarCategoria';
+import FormCategoria from './pages/categorias/FormCategoria';
 
 function App() {
   return (<>
@@ -22,7 +23,7 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/cadastrarcategoria" element={<CadastrarCategoria />} />
         <Route path="/categoria" element={<Categorias />} />
-        <Route path="/editarcategoria/:id" element={<Categorias />} />
+        <Route path="/editarcategoria/:id" element={<FormCategoria />} />
         <Route path="/deletarcategoria/:id" element={<DeletarCategoria />} />
         <Route path="/produtos" element={<ListaProdutos />} />
         <Route path="/cadastrarproduto" element={<FormProduto />} />

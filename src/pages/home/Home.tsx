@@ -53,15 +53,14 @@ function Home() {
               />
             </div>
           </div>
-          <div className="flex flex-col justify-around items-center">
-            <h2 className="text-3xl font-bold my-4 text-cream">Recomendação:</h2>
-      
-          <RecomendaProduto />
-        
-            
           
-          </div>
         </div>
+        <div className="flex flex-col justify-around items-center py-16">
+            <h2 className="text-3xl font-bold my-4 text-green-400">
+              Recomendação:
+            </h2>
+            <RecomendaProduto />
+          </div>
       </div>
     </>
   );
