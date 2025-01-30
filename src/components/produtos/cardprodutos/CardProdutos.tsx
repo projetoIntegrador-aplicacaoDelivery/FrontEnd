@@ -1,5 +1,6 @@
 import React from "react";
 import { Produto } from "../../../models/Produto";
+import { Link } from "react-router-dom";
 
 
 interface CardProdutosProps {
@@ -25,7 +26,7 @@ function CardProdutos({ produto }: CardProdutosProps) {
           <p className="text-gray-700 mt-2 text-sm">{produto.descricao}</p>
         </div>
         <div className=" flex flex-row justify-evenly pt-2 align-bottom my-3 py-2 px-4">
-          <button className=" bg-green-400 px-2 rounded-3xl">Editar</button>
+          <Link to={'/editarproduto/${produto.id}'}><button className=" bg-green-400 px-2 rounded-3xl">Editar</button></Link>
           <button className=" bg-red-400 px-2 rounded-3xl">Deletar</button>
         </div>
       </div>

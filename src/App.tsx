@@ -5,6 +5,7 @@ import CadastrarCategoria from './pages/categorias/CadastrarCategoria';
 import Navbar from './components/navbar/Navbar';
 import Footer from './components/footer/Footer';
 import ListaProdutos from './components/produtos/listaprodutos/ListaProdutos';
+import FormProduto from './components/produtos/formproduto/FormProduto';
 
 function App() {
   return (
@@ -16,6 +17,8 @@ function App() {
         <Route path="/categorias" element={<Categorias />} />
         <Route path="/cadastrarcategoria" element={<CadastrarCategoria />} />
         <Route path="/produtos" element={<ListaProdutos />} />
+        <Route path="/cadastrarproduto" element={<FormProduto />} />
+        <Route path="/editarproduto/:id" element={<FormProduto />} />
       </Routes>
       <Footer />
     </Router>
