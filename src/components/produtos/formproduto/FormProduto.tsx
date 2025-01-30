@@ -2,7 +2,7 @@ import React, { ChangeEvent, useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import Categoria from "../../../models/Categoria";
 import { Produto } from "../../../models/Produto";
-import { buscar } from "../../../services/Service";
+import { atualizar, buscar, cadastrar } from "../../../services/Service";
 
 function FormProduto() {
   const navigate = useNavigate();
@@ -27,7 +27,7 @@ function FormProduto() {
 
   async function buscarCategoriaPorId(id: string) {
     try {
-      await buscar(`/categorias/${id}`, setCategoria);
+      await buscar(`/categoria/${id}`, setCategoria);
     } catch (error: any) {
       console.log(error.toString());
     }
@@ -35,7 +35,7 @@ function FormProduto() {
 
   async function buscarCategorias() {
     try {
-      await buscar("/temas", setCategorias);
+      await buscar("/categoria", setCategorias);
     } catch (error: any) {
       console.log(error.toString());
     }
@@ -65,7 +65,7 @@ function FormProduto() {
   }
 
   function retornar() {
-    navigate("produtos");
+    navigate("/produtos");
   }
 
   async function gerarNovoProduto(e: ChangeEvent<HTMLFormElement>) {
@@ -73,33 +73,35 @@ function FormProduto() {
 
     if (id !== undefined) {
       try {
-        await atualizar("/produto", produto, setProduto);
+        await atualizar("/produtos", produto, setProduto);
         alert("Produto atualizado com sucesso!");
+        retornar()
       } catch (error: any) {
         console.log(error.toString());
         alert("Erro ao atualizar produto!");
       }
+      
     } else {
       try {
         await cadastrar("/produtos", produto, setProduto);
         alert("Produto cadastrado com sucesso!");
+       
       } catch (error: any) {
         console.log(error.toString());
         alert("Erro ao cadastrar a produto");
       }
     }
-    retornar();
+    retornar()
   }
 
   const carregandoCategoria = categoria.descricao === "";
-
 
   return (
     <>
       <div className="container flex flex-col mx-auto items-center">
         <h1 className="text-4xl text-center my-8">
-            {id !== undefined ? 'Editar Produto' : 'Cadastrar Produto'}
-            </h1>
+          {id !== undefined ? "Editar Produto" : "Cadastrar Produto"}
+        </h1>
 
         <form className="flex flex-col w-1/2 gap-4" onSubmit={gerarNovoProduto}>
           <div className="flex flex-col gap-2">
@@ -107,11 +109,13 @@ function FormProduto() {
             <input
               type="text"
               placeholder="Nome do Produto"
-              name="titulo"
+              name="nomeProduto"
               required
               className="border-2 border-black rounded p-2"
               value={produto.nomeProduto}
-              onChange={(e: ChangeEvent<HTMLInputElement>)=> atualizarEstado(e)}
+              onChange={(e: ChangeEvent<HTMLInputElement>) =>
+                atualizarEstado(e)
+              }
             />
           </div>
           <div className="flex flex-col gap-2">
@@ -123,7 +127,9 @@ function FormProduto() {
               required
               className="border-2 border-black rounded p-2"
               value={produto.descricao}
-              onChange={(e: ChangeEvent<HTMLInputElement>)=> atualizarEstado(e)}
+              onChange={(e: ChangeEvent<HTMLInputElement>) =>
+                atualizarEstado(e)
+              }
             />
           </div>
           <div className="flex flex-col gap-2">
@@ -135,7 +141,9 @@ function FormProduto() {
               required
               className="border-2 border-black rounded p-2"
               value={produto.preco}
-              onChange={(e: ChangeEvent<HTMLInputElement>)=> atualizarEstado(e)}
+              onChange={(e: ChangeEvent<HTMLInputElement>) =>
+                atualizarEstado(e)
+              }
             />
           </div>
           <div className="flex flex-col gap-2">
@@ -147,7 +155,9 @@ function FormProduto() {
               required
               className="border-2 border-slate-700 rounded p-2"
               value={produto.foto}
-              onChange={(e: ChangeEvent<HTMLInputElement>)=> atualizarEstado(e)}
+              onChange={(e: ChangeEvent<HTMLInputElement>) =>
+                atualizarEstado(e)
+              }
             />
           </div>
           <div className="flex flex-col gap-2">
@@ -156,25 +166,30 @@ function FormProduto() {
               name="categoria"
               id="categoria"
               className="border-2 p-2 border-black rounded"
+              onChange={(e) => buscarCategoriaPorId(e.currentTarget.value)}
+              
             >
               <option value="" selected disabled>
                 Selecione uma Categoria
               </option>
 
-              <>
-                <option value={categoria.id}>{categoria.descricao}</option>
-              </>
+              {categorias.map((categoria) => (
+                <option key={categoria.id} value={categoria.id}>{categoria.descricao}</option>
+              ))}
             </select>
           </div>
+          
           <button
             type="submit"
             className="rounded disabled:bg-slate-200 bg-green-400 hover:bg-green-900
                                text-white font-bold w-1/2 mx-auto py-2 flex justify-center"
-                               disabled={carregandoCategoria}
+            disabled={carregandoCategoria}
           >
-            <span>{id !== undefined ? 'Atualizar' : 'Cadastrar'}</span>
+            <span>{id !== undefined ? "Atualizar" : "Cadastrar"}</span>
           </button>
+          
         </form>
+        
       </div>
     </>
   );
