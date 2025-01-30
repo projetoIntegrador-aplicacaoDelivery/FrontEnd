@@ -5,6 +5,8 @@ import CadastrarCategoria from './pages/categorias/CadastrarCategoria';
 import Navbar from './components/navbar/Navbar';
 import Footer from './components/footer/Footer';
 import ListaProdutos from './components/produtos/listaprodutos/ListaProdutos';
+import FormProduto from './components/produtos/formproduto/FormProduto';
+import DeletarProduto from './components/produtos/deletarproduto/DeletarProduto';
 
 function App() {
   return (
@@ -16,6 +18,9 @@ function App() {
         <Route path="/cadastrarcategoria" element={<CadastrarCategoria />} />
         <Route path="/categoria" element={<Categorias />} />
         <Route path="/produtos" element={<ListaProdutos />} />
+        <Route path="/cadastrarproduto" element={<FormProduto />} />
+        <Route path="/editarproduto/:id" element={<FormProduto />} />
+        <Route path="/deletarproduto/:id" element={<DeletarProduto />} />
       </Routes>
       <Footer />
     </Router>
