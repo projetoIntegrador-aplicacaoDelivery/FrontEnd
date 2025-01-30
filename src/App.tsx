@@ -10,6 +10,7 @@ import DeletarProduto from './components/produtos/deletarproduto/DeletarProduto'
 import RecomendaProduto from './components/produtos/recomendaproduto/RecomendaProduto';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import DeletarCategoria from './pages/categorias/DeletarCategoria';
 
 function App() {
   return (<>
@@ -21,6 +22,8 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/cadastrarcategoria" element={<CadastrarCategoria />} />
         <Route path="/categoria" element={<Categorias />} />
+        <Route path="/editarcategoria/:id" element={<Categorias />} />
+        <Route path="/deletarcategoria/:id" element={<DeletarCategoria />} />
         <Route path="/produtos" element={<ListaProdutos />} />
         <Route path="/cadastrarproduto" element={<FormProduto />} />
         <Route path="/editarproduto/:id" element={<FormProduto />} />
