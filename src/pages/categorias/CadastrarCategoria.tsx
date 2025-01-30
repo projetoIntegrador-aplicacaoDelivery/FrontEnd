@@ -13,7 +13,6 @@ function CadastrarCategoria() {
     e.preventDefault();
 
     const novaCategoria: Categoria = {
-      id: 0,
       descricao,
     };
 
@@ -22,7 +21,7 @@ function CadastrarCategoria() {
     try {
       await CategoriaService.cadastrarCategoria(novaCategoria);
       alert('Categoria cadastrada com sucesso!');
-      navigate('/categorias');
+      navigate('/categoria');
     } catch (error) {
       console.error('Erro ao cadastrar categoria:', error);
       alert('Erro ao cadastrar categoria. Tente novamente.');
@@ -32,7 +31,7 @@ function CadastrarCategoria() {
   };
 
   const retornar = () => {
-    navigate('/categorias');
+    navigate('/categoria');
   };
 
   return (
