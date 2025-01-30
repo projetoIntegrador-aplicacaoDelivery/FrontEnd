@@ -7,6 +7,7 @@ import Footer from './components/footer/Footer';
 import ListaProdutos from './components/produtos/listaprodutos/ListaProdutos';
 import FormProduto from './components/produtos/formproduto/FormProduto';
 import DeletarProduto from './components/produtos/deletarproduto/DeletarProduto';
+import RecomendaProduto from './components/produtos/recomendaproduto/RecomendaProduto';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/cadastrarproduto" element={<FormProduto />} />
         <Route path="/editarproduto/:id" element={<FormProduto />} />
         <Route path="/deletarproduto/:id" element={<DeletarProduto />} />
+        <Route path="/recomenda" element={<RecomendaProduto />} />
       </Routes>
       <Footer />
     </Router>

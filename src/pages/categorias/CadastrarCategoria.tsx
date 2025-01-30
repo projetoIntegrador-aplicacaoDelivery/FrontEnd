@@ -44,8 +44,8 @@ function CadastrarCategoria() {
           <label htmlFor="nome">Nome</label>
           <input
             type="text"
-            id="nome"
-            name="nome"
+            id="descricao"
+            name="descricao"
             placeholder="Nome da categoria"
             className="border-2 border-slate-700 rounded p-2 placeholder-gray-600 focus:placeholder-gray-400"
             value={descricao}
