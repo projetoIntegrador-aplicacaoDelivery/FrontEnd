@@ -3,6 +3,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import Categoria from "../../../models/Categoria";
 import { Produto } from "../../../models/Produto";
 import { atualizar, buscar, cadastrar } from "../../../services/Service";
+import { ToastAlerta } from "../../../utils/ToastAlert";
 
 function FormProduto() {
   const navigate = useNavigate();
@@ -74,21 +75,21 @@ function FormProduto() {
     if (id !== undefined) {
       try {
         await atualizar("/produtos", produto, setProduto);
-        alert("Produto atualizado com sucesso!");
+        ToastAlerta("Produto atualizado com sucesso!",'sucesso');
         navigate("/produtos")
       } catch (error: any) {
         console.log(error.toString());
-        alert("Erro ao atualizar produto!");
+        ToastAlerta("Erro ao atualizar produto!",'erro');
       }
       
     } else {
       try {
         await cadastrar("/produtos", produto, setProduto);
-        alert("Produto cadastrado com sucesso!");
+        ToastAlerta("Produto cadastrado com sucesso!",'sucesso');
         navigate("/produtos")
       } catch (error: any) {
         console.log(error.toString());
-        alert("Erro ao cadastrar a produto");
+        ToastAlerta("Erro ao cadastrar a produto",'erro');
       }
     }
     

@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import './CadastrarCategoria.css';
 import Categoria from '../../models/Categoria';
 import CategoriaService from '../../services/CategoriaService';
+import { ToastAlerta } from '../../utils/ToastAlert';
 function CadastrarCategoria() {
   const [descricao, setNome] = useState<string>('');
   const [isLoading, setIsLoading] = useState<boolean>(false);
@@ -20,11 +21,11 @@ function CadastrarCategoria() {
 
     try {
       await CategoriaService.cadastrarCategoria(novaCategoria);
-      alert('Categoria cadastrada com sucesso!');
+      ToastAlerta('Categoria cadastrada com sucesso!','sucessos');
       navigate('/categoria');
     } catch (error) {
       console.error('Erro ao cadastrar categoria:', error);
-      alert('Erro ao cadastrar categoria. Tente novamente.');
+      ToastAlerta('Erro ao cadastrar categoria. Tente novamente.','erro');
     } finally {
       setIsLoading(false);
     }

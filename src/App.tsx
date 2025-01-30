@@ -8,9 +8,12 @@ import ListaProdutos from './components/produtos/listaprodutos/ListaProdutos';
 import FormProduto from './components/produtos/formproduto/FormProduto';
 import DeletarProduto from './components/produtos/deletarproduto/DeletarProduto';
 import RecomendaProduto from './components/produtos/recomendaproduto/RecomendaProduto';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
-  return (
+  return (<>
+    <ToastContainer />
     <Router>
       <Navbar />
       <Routes>
@@ -26,6 +29,7 @@ function App() {
       </Routes>
       <Footer />
     </Router>
+  </>
   );
 }
 

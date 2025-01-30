@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import Categoria from "../../models/Categoria";
 import { buscar } from "../../services/Service";
 import CardCategoria from "./CardCategoria";
+import { ToastAlerta } from "../../utils/ToastAlert";
 
 
 function ListarCategoria() {
@@ -18,7 +19,7 @@ function ListarCategoria() {
         } catch (error: any) {
             console.error('Erro ao buscar categoria:', error);
             // Se houver um erro relacionado ao acesso, redireciona o usuário ou exibe uma mensagem
-            alert('Erro ao carregar categoria.');
+            ToastAlerta('Erro ao carregar categoria.','erro');
         }
     }
 
