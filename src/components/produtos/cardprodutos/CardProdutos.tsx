@@ -27,7 +27,8 @@ function CardProdutos({ produto }: CardProdutosProps) {
         </div>
         <div className=" flex flex-row justify-evenly pt-2 align-bottom my-3 py-2 px-4">
           <Link to={`/editarproduto/${produto.id}`}><button className=" bg-green-400 px-2 rounded-3xl hover:cursor-pointer hover:scale-105">Editar</button></Link>
-          <button className=" bg-red-400 px-2 rounded-3xl">Deletar</button>
+          <Link to={`/deletarproduto/${produto.id}`}><button className=" bg-red-400 px-2 rounded-3xl hover:cursor-pointer hover:scale-105">Deletar</button></Link>
+          
         </div>
       </div>
     </>

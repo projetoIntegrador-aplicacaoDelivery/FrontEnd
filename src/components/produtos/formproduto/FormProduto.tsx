@@ -75,7 +75,7 @@ function FormProduto() {
       try {
         await atualizar("/produtos", produto, setProduto);
         alert("Produto atualizado com sucesso!");
-        retornar()
+        navigate("/produtos")
       } catch (error: any) {
         console.log(error.toString());
         alert("Erro ao atualizar produto!");
@@ -85,13 +85,13 @@ function FormProduto() {
       try {
         await cadastrar("/produtos", produto, setProduto);
         alert("Produto cadastrado com sucesso!");
-       
+        navigate("/produtos")
       } catch (error: any) {
         console.log(error.toString());
         alert("Erro ao cadastrar a produto");
       }
     }
-    retornar()
+    
   }
 
   const carregandoCategoria = categoria.descricao === "";
@@ -180,6 +180,7 @@ function FormProduto() {
           </div>
           
           <button
+            
             type="submit"
             className="rounded disabled:bg-slate-200 bg-green-400 hover:bg-green-900
                                text-white font-bold w-1/2 mx-auto py-2 flex justify-center"
