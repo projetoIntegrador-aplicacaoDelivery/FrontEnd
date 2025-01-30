@@ -2,13 +2,13 @@ import axios from "axios";
 import Categoria from "../models/Categoria";
 
 const api = axios.create({
-  baseURL: 'https://farmacia-jk1x.onrender.com/'
+  baseURL: 'http://localhost:8080'
 });
 
 class CategoriaService {
   async listarCategorias(): Promise<Categoria[]> {
     try {
-      const response = await api.get('/categorias');
+      const response = await api.get('/categoria');
       return response.data;
     } catch (error) {
       console.error('Erro ao listar categorias', error);
@@ -18,7 +18,7 @@ class CategoriaService {
 
   async cadastrarCategoria(categoria: Categoria): Promise<Categoria> {
     try {
-      const response = await api.post('/categorias', categoria);
+      const response = await api.post('/categoria', categoria);
       return response.data;
     } catch (error) {
       console.error('Erro ao cadastrar categoria', error);
@@ -28,7 +28,7 @@ class CategoriaService {
 
   async atualizarCategoria(id: number, categoria: Categoria): Promise<Categoria> {
     try {
-      const response = await api.put(`/categorias/${id}`, categoria);
+      const response = await api.put(`/categoria/${id}`, categoria);
       return response.data;
     } catch (error) {
       console.error('Erro ao atualizar categoria', error);
@@ -38,7 +38,7 @@ class CategoriaService {
 
   async deletarCategoria(id: number): Promise<void> {
     try {
-      await api.delete(`/categorias/${id}`);
+      await api.delete(`/categoria/${id}`);
     } catch (error) {
       console.error('Erro ao deletar categoria', error);
       throw error;

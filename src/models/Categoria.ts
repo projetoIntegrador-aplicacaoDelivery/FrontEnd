@@ -1,5 +1,5 @@
 export default interface Categoria {
-  id: number;
+  id?: number;
   descricao: string;
   //produtos: Produto[];
 }
