@@ -17,7 +17,8 @@ function Home() {
                 </button>
               </div>
             </div>
-            <div className="flex-row-reverse">
+            <div className="flex-row-reverse my-8
+            ">
               <img
                 src="./src/assets/img-home.jpg"
                 alt="Imagem da página Home"
@@ -28,7 +29,7 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className="bg-green-200 py-8 px-8 rounded-lg mt-8 ">
+        <div className="bg-green-200 py-8 px-8 rounded-lg mb-4 ">
           <div className="container mx-auto flex flex-col md:flex-row justify-around items-center gap-8">
             <div className="flex space-x-16 md:space-x-32 rounded-lg  p-6 ">
               <h5 className="text-xl font-bold mb-2 text-cream text-center">
